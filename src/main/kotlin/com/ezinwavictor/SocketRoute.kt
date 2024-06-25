@@ -19,7 +19,7 @@ fun Route.socket(game: MessageServer) {
            } catch (e: Exception) {
                e.printStackTrace()
            } finally {
-              game.disconnectPlayer(player)
+              game.disconnectClient(player)
            }
        }
    }
