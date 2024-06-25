@@ -1,6 +1,6 @@
 package com.ezinwavictor
 
-import com.ezinwavictor.models.TicTakGame
+import com.ezinwavictor.models.MessageServer
 import com.ezinwavictor.plugins.*
 import io.ktor.server.application.*
 
@@ -9,7 +9,7 @@ fun main(args: Array<String>) {
 }
 
 fun Application.module() {
-    val game = TicTakGame()
+    val game = MessageServer()
     configureSockets()
     configureSerialization()
     configureMonitoring()
